@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="18dp"
+    app:cardCornerRadius="10dp"
+    android:shadowColor="#000"
+    android:shadowDx="0"
+    android:shadowDy="30"
+    android:shadowRadius="50"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageNews"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textview_heading_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageNews"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:maxLines="2"
+
+            android:padding="3dp"
+            android:text="New Heading"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_subheading_News"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sub heading"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:layout_margin="3dp"
+
+            android:padding="3dp"
+            android:layout_below="@+id/textview_heading_News"
+
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
